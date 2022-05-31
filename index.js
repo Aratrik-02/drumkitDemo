@@ -9,6 +9,16 @@ document.addEventListener("keypress",function (event){
     makenoise(event.key);
     animation(event.key);
 })
+/* Equivalent JQuery code
+$("button").click(function () {
+    var buttonInnerHTML = this.innerHTML;
+    makenoise(buttonInnerHTML);
+    animation(buttonInnerHTML);
+})
+$("body").keypress(function (event){
+    makenoise(event.key);
+    animation(event.key);
+})*/
 function makenoise(k){
     switch(k){
         case "w": 
